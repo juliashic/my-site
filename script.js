@@ -123,6 +123,20 @@ pClose.addEventListener('click', closeModal);
 document.getElementById('p-modal-backdrop').addEventListener('click', closeModal);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+// ============ ROTATING WORD ============
+const rotatingWords = ['продают', 'завлекают', 'интересуют', 'вовлекают', 'восхищают', 'окупаются'];
+let rotatingIdx = 0;
+const rotatingEl = document.querySelector('.rotating-word');
+
+setInterval(() => {
+  rotatingEl.classList.add('fade-out');
+  setTimeout(() => {
+    rotatingIdx = (rotatingIdx + 1) % rotatingWords.length;
+    rotatingEl.textContent = rotatingWords[rotatingIdx];
+    rotatingEl.classList.remove('fade-out');
+  }, 350);
+}, 2000);
+
 // Smooth active nav link highlight on scroll
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav__links a');
