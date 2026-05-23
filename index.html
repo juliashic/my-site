@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Юлия Самохина — создаю сайты и таплинки</title>
+  <meta name="description" content="Создаю сайты и таплинки под ключ. Быстро, красиво, с текстами в комплекте." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <!-- GRAIN OVERLAY -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">Юлия Самохина</a>
+      <ul class="nav__links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#process">Процесс</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--outline-green nav__cta">Написать</a>
+      <button class="nav__burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#process">Процесс</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="btn btn--green">Написать</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__badge hero__badge--float">Свежий взгляд на ваш бизнес ✦</div>
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <div class="hero__badge">Свежий взгляд на ваш бизнес ✦</div>
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line-text">Делаю сайты,</span></span>
+          <span class="line-mask"><span class="line-text">которые <span class="accent-green"><nobr>приводят клиентов</nobr></span></span></span>
+        </h1>
+        <p class="hero__sub">
+          От&nbsp;первого сообщения до&nbsp;готового сайта — веду проект сама, без&nbsp;посредников и&nbsp;пропаданий
+        </p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn btn--green">Смотреть работы</a>
+          <a href="#contact" class="btn btn--ghost">Обсудить проект →</a>
+        </div>
+        <div class="hero__chips">
+          <span class="chip chip--pink">Таплинк за 5 дней</span>
+          <span class="chip chip--pink">Правки включены</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Сайты под ключ</span><span class="marquee-dot">✦</span>
+      <span>Таплинк за 5 дней</span><span class="marquee-dot">✦</span>
+      <span>Тексты в комплекте</span><span class="marquee-dot">✦</span>
+      <span>Правки включены</span><span class="marquee-dot">✦</span>
+      <span>Дизайн под бренд</span><span class="marquee-dot">✦</span>
+      <span>На связи после сдачи</span><span class="marquee-dot">✦</span>
+      <span>Сайты под ключ</span><span class="marquee-dot">✦</span>
+      <span>Таплинк за 5 дней</span><span class="marquee-dot">✦</span>
+      <span>Тексты в комплекте</span><span class="marquee-dot">✦</span>
+      <span>Правки включены</span><span class="marquee-dot">✦</span>
+      <span>Дизайн под бренд</span><span class="marquee-dot">✦</span>
+      <span>На связи после сдачи</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Что делаю</p>
+        <h2 class="section-title">Услуги</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <h3>Таплинк</h3>
+          <p>Мобильная страница для Instagram — не&nbsp;просто мультиссылка, а&nbsp;полноценный мини-сайт с&nbsp;вашим стилем</p>
+          <ul class="service-list">
+            <li>Уникальный дизайн (не шаблон)</li>
+            <li>Кнопки в мессенджеры</li>
+            <li>Блок портфолио или услуг</li>
+            <li>Форма записи или оплаты</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="price">от 9 990 ₽</span>
+            <a href="#contact" class="btn btn--sm btn--green">Хочу такой</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Чат-бот</h3>
+          <p>Автоматизирует общение с клиентами — отвечает на&nbsp;вопросы, принимает заявки и&nbsp;записывает без&nbsp;вашего участия</p>
+          <ul class="service-list">
+            <li>Приветствие и сценарий диалога</li>
+            <li>Приём заявок и записи</li>
+            <li>Ответы на частые вопросы</li>
+            <li>Интеграция с Telegram</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="price">от 999 ₽</span>
+            <a href="#contact" class="btn btn--sm btn--green">Хочу такой</a>
+          </div>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Популярное</div>
+          <h3>Лендинг</h3>
+          <p>Продающая страница под конкретную услугу или&nbsp;акцию — с&nbsp;чёткой структурой, текстами и&nbsp;кнопкой записи</p>
+          <ul class="service-list">
+            <li>Маркетинговая структура</li>
+            <li>Тексты пишу сама</li>
+            <li>Дизайн под ваш бренд</li>
+            <li>Форма онлайн-записи</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="price">от 19 990 ₽</span>
+            <a href="#contact" class="btn btn--sm btn--green">Хочу такой</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Многостраничный сайт</h3>
+          <p>Полноценный сайт с несколькими страницами — каталог, блог, о компании, контакты. Для тех, кому нужно больше</p>
+          <ul class="service-list">
+            <li>Несколько страниц и разделов</li>
+            <li>Навигация и структура</li>
+            <li>Базовая SEO-настройка</li>
+            <li>Адаптация под мобильные</li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="price">от 29 990 ₽</span>
+            <a href="#contact" class="btn btn--sm btn--green">Хочу такой</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ME -->
+  <section class="why" style="position:relative;overflow:hidden;">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Почему я</p>
+        <h2 class="section-title">То, чего нет<br>у других</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card">
+          <div class="why-card__num">01</div>
+          <h4>Тексты в комплекте</h4>
+          <p>Если не&nbsp;знаете, что&nbsp;написать — не&nbsp;страшно. Структуру и&nbsp;тексты под&nbsp;ваш бизнес сделаю сама — это уже входит в&nbsp;стоимость</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__num">02</div>
+          <h4>Таплинк за 5 дней</h4>
+          <p>Через 5&nbsp;дней у&nbsp;вас уже будет красивая страница — не&nbsp;через месяц согласований, а&nbsp;прямо сейчас. Быстро, чётко, без лишних вопросов</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__num">03</div>
+          <h4>Правки пока не понравится</h4>
+          <p>Работаем до&nbsp;результата — без&nbsp;лимита правок. Вы должны полностью полюбить свою страницу, и&nbsp;точка</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__num">04</div>
+          <h4>Остаюсь на&nbsp;связи</h4>
+          <p>После сдачи не&nbsp;исчезаю. Появился вопрос, нужна мелкая правка или просто что-то непонятно — всегда можно написать, отвечу и&nbsp;помогу</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Работы</p>
+        <h2 class="section-title">Портфолио</h2>
+      </div>
+
+      <div class="portfolio__grid">
+
+        <article class="portfolio-thumb" data-case="0">
+          <div class="portfolio-thumb__preview">
+            <div class="portfolio-thumb__viewport">
+              <iframe src="https://smmspecialistka-cmd.github.io/SMMMSPECIALISTKA-CMD.github.io/" frameborder="0" scrolling="no" tabindex="-1" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            </div>
+            <div class="portfolio-thumb__label">Смотреть кейс →</div>
+          </div>
+          <div class="portfolio-thumb__info">
+            <div class="portfolio__tags">
+              <span class="tag tag--pink">Лендинг</span>
+              <span class="tag tag--green">Бьюти-ниша</span>
+              <span class="tag">Новосибирск</span>
+            </div>
+            <h3>Екатерина LASH</h3>
+            <p class="portfolio-thumb__task"><b>Задача:</b> Создать продающий лендинг для мастера из Новосибирска. Нужна онлайн-запись, галерея работ, блок об&nbsp;услугах и&nbsp;доверие с&nbsp;первого экрана.</p>
+            <p class="portfolio-thumb__result"><b>Решение:</b> Одностраничник с&nbsp;героем «Просыпайся красивой каждое утро», галереей работ по&nbsp;видам наращивания, ценами и&nbsp;прямой кнопкой записи в&nbsp;Telegram.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-thumb" data-case="1">
+          <div class="portfolio-thumb__preview">
+            <div class="portfolio-thumb__viewport">
+              <iframe src="https://smmspecialistka-cmd.github.io/alinanur/" frameborder="0" scrolling="no" tabindex="-1" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+            </div>
+            <div class="portfolio-thumb__label">Смотреть кейс →</div>
+          </div>
+          <div class="portfolio-thumb__info">
+            <div class="portfolio__tags">
+              <span class="tag tag--pink">Лендинг</span>
+              <span class="tag tag--green">Фотография</span>
+              <span class="tag">Уфа</span>
+            </div>
+            <h3>Алина Нур</h3>
+            <p class="portfolio-thumb__task"><b>Задача:</b> Создать сайт для фотографа — свадьбы, портреты, Love Story. Важно передать атмосферу живых кадров и&nbsp;вызвать доверие с&nbsp;первого экрана.</p>
+            <p class="portfolio-thumb__result"><b>Решение:</b> Тёмный лендинг с&nbsp;галереей работ, блоком услуг и&nbsp;ценами, отзывами и&nbsp;удобной формой записи на&nbsp;съёмку.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="portfolio__note">Больше работ появится совсем скоро — уже работаю над новыми проектами ✦</p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO MODAL -->
+  <div class="p-modal" id="p-modal" aria-hidden="true">
+    <div class="p-modal__backdrop" id="p-modal-backdrop"></div>
+    <div class="p-modal__box">
+      <button class="p-modal__close" id="p-modal-close" aria-label="Закрыть">✕</button>
+      <iframe id="p-modal-iframe" src="" frameborder="0" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Как работаем</p>
+        <h2 class="section-title">4 простых шага</h2>
+      </div>
+      <div class="process__steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div class="step__body">
+            <h4>Знакомство</h4>
+            <p>Пишете мне в&nbsp;Telegram — переписываемся, я&nbsp;узнаю о&nbsp;вашем деле, задаче и&nbsp;пожеланиях. Никакого официоза, просто разговор</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div class="step__body">
+            <h4>Бриф</h4>
+            <p>Отправляю анкету — заполняете в&nbsp;удобное время. Это помогает мне понять ваш стиль, аудиторию и&nbsp;цели, чтобы сайт попал точно в&nbsp;цель</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div class="step__body">
+            <h4>Макет и&nbsp;правки</h4>
+            <p>Готовлю прототип сайта и&nbsp;показываю вам. Если есть правки — вношу сразу. Двигаемся дальше только тогда, когда макет нравится</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">4</div>
+          <div class="step__body">
+            <h4>Готовый сайт</h4>
+            <p>Собираю сайт по&nbsp;согласованному макету и&nbsp;передаю вам. Остаюсь на&nbsp;связи — если появятся вопросы, всегда можно написать</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Частые вопросы</p>
+        <h2 class="section-title">FAQ</h2>
+      </div>
+      <div class="faq__list">
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            От чего зависит стоимость?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>От типа сайта, объёма работ и&nbsp;сложности дизайна. Лендинг стоит меньше многостраничного сайта — потому что это одна страница с&nbsp;одной задачей. Чем больше разделов, функций и&nbsp;индивидуальных решений — тем выше цена. Точную цену называю после обсуждения структуры и&nbsp;наполнения сайта.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            Сколько правок входит?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Без&nbsp;ограничений — работаем до&nbsp;тех пор, пока результат вас полностью не&nbsp;устроит. Это принципиально: вы должны полюбить свой сайт.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            Что если мне не понравится результат?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Продолжаем дорабатывать. Не&nbsp;сдаю работу, пока клиент доволен. Если расходимся во&nbsp;вкусах ещё на&nbsp;этапе брифа — возвращаю предоплату.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            Нужно ли покупать домен или хостинг?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Для размещения сайта понадобится хостинг — от&nbsp;100&nbsp;₽/мес на&nbsp;российских платформах. Домен (адрес сайта) — от&nbsp;100&nbsp;₽/год. Помогу выбрать, подключить и&nbsp;настроить всё сама.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            Как быстро будет готово?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Таплинк — 5 дней. Лендинг — 5–10 дней. Многостраничный сайт — от 14 дней.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <p class="section-label">Написать мне</p>
+        <h2 class="contact__title">Клиенты уходят<br>к тем, кого видно</h2>
+        <p class="contact__sub">
+          Без сайта вас просто не&nbsp;находят. Напишите мне — разберёмся, что нужно именно вам, и&nbsp;сделаем сайт, который работает
+        </p>
+        <div class="contact__actions">
+          <a href="https://t.me/juliashics" target="_blank" class="btn btn--green btn--lg">Написать в&nbsp;Telegram</a>
+          <a href="https://vk.com/juliashics" target="_blank" class="btn btn--ghost btn--lg">ВКонтакте</a>
+        </div>
+        <p class="contact__note">Отвечаю в течение часа ✦</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="nav__logo">Юлия Самохина</a>
+        <p class="footer__copy">© 2026 — создаю сайты и таплинки с&nbsp;душой</p>
+        <div class="footer__links">
+          <a href="#services">Услуги</a>
+          <a href="#portfolio">Портфолио</a>
+          <a href="#contact">Контакт</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
