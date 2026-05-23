@@ -1104,6 +1104,13 @@ p  { color: var(--text-mid); line-height: 1.75; }
   height: 100%;
   overflow: hidden;
 }
+.portfolio-thumb__viewport img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
 .portfolio-thumb__viewport iframe {
   width: 1280px;
   height: 900px;
